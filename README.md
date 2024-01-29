@@ -1,32 +1,36 @@
-# React Truffle Box
+# Project Supply Chain
 
-This box comes with everything you need to start using Truffle to write, compile, test, and deploy smart contracts, and interact with them from a React app.
+This project is an example of a supply chain / simple payment which we can use even in real world.
 
 ## Installation
 
-First ensure you are in an empty directory.
+First ensure you are in the directory. Ensure that you have installed required dependencies.
 
-Run the `unbox` command using 1 of 2 ways.
+Ensure that you are in [Truffle Directory](./truffle). Run `truffle develop` where you will have 10 wallets with 100 eth each and private keys which you can import into your metamask. After the accounts are shown in terminal please run `migrate` in the truffle env that you are. This command will deploy contracts and you will have a directory in `src` which will be named contracts after this you can proceed into running the app like below.
 
-```sh
-# Install Truffle globally and run `truffle unbox`
-$ npm install -g truffle
-$ truffle unbox react
-```
-
-```sh
-# Alternatively, run `truffle unbox` via npx
-$ npx truffle unbox react
-```
-
-Start the react dev server.
+Change directory to [Client Directory](./client) and start react dev server like below:
 
 ```sh
 $ cd client
 $ npm start
 ```
 
-From there, follow the instructions on the hosted React app. It will walk you through using Truffle and Ganache to deploy the `SimpleStorage` contract, making calls to it, and sending transactions to change the contract's state.
+## About
+
+### Real-World Use-Case for this Project
+💡 Can be part of a supply-chain solution
+
+💡 Automated Dispatch upon payment
+
+💡 Payment collection without middlemen
+
+### Acknowledgment
+This project was inspired by Thomas Wiesner's Ethereum Blockchain Developer Bootcamp With Solidity (2024) course on Udemy.
+While this project shares similarities with the course content, it has been independently developed and customized for learning purposes and being updated.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## FAQ
 
